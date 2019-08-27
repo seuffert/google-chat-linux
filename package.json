@@ -1,11 +1,11 @@
 {
   "name": "google-chat-linux",
-  "version": "0.0.4-3",
+  "version": "0.0.4-4",
   "description": "Google Hangouts Chat unofficial linux app",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager . --icon=assets/icon/icon.png --platform=linux --arch=x64 --electron-version=5.0.0 --overwrite --out dist/",
+    "build": "electron-packager . --icon=assets/icon/icon.png --platform=linux --arch=x64 --electron-version=6.0.4 --overwrite --out dist/",
     "deb64": "electron-installer-debian --config deb-config.json --arch amd64",
     "rpm64": "electron-installer-redhat --config rpm-config.json --arch x86_64"
   },
@@ -13,13 +13,14 @@
   "author": "Roberto Fasciolo <rob@robyf.net> (https://www.robyf.net/)",
   "license": "WTFPL",
   "devDependencies": {
-    "electron": "^5.0.0",
-    "electron-installer-debian": "^1.1.1",
-    "electron-installer-redhat": "^1.0.1",
-    "electron-packager": "^13.1.1"
+    "electron": "^6.0.4",
+    "electron-builder": "^21.2.0",
+    "electron-installer-debian": "^2.0.0",
+    "electron-installer-redhat": "^2.0.0",
+    "electron-packager": "^14.0.4"
   },
   "dependencies": {
-    "electron-context-menu": "^0.9.1",
+    "electron-context-menu": "^0.14.0",
     "electron-localshortcut": "^3.1.0"
   }
 }
